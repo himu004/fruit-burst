@@ -43,6 +43,7 @@
     <!-- Header Section Starts -->
     <header>
         <!-- Navbar -->
+        <!-- Small Screen NavBar -->
         <nav>
             <nav>
                 <div class="navbar bg-base-100 lg:hidden">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
             </nav>
-            <!-- Main Code -->
+            <!-- Large Screen NavBar -->
             <div class="navbar bg-primary rounded-full my-10 py-4 px-5 lg:flex md:hidden hidden">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -113,7 +114,7 @@
 
         <!-- Hero Section -->
         <section>
-            <div class="">
+            <div class="relative">
                 <div class="carousel max-h-[calc(100vh-90px)]">
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="images/banner1.png" class="w-full relative" />
@@ -196,29 +197,31 @@
                     </div>
                 </div>
                 <!-- Fruit Busket -->
-                <div
-                    class="absolute lg:flex justify-center gap-28 border rounded-lg drop-shadow-lg mx-10 -bottom-12 bg-slate-50 mr-4 py-3 px-7 hidden">
-                    <!-- Fruites -->
-                    <div>
-                        <img src="images/fruit1.png" alt="">
-                        <h3 class="text-center">Berry</h3>
-                    </div>
+                <div class="lg:flex justify-center">
+                    <div
+                        class="absolute lg:flex justify-center gap-28 border rounded-lg drop-shadow-lg mx-10 -bottom-20 bg-slate-50 mr-4 py-3 px-7 hidden">
+                        <!-- Fruites -->
+                        <div>
+                            <img src="images/fruit1.png" alt="">
+                            <h3 class="text-center">Berry</h3>
+                        </div>
 
-                    <div class="text-center">
-                        <img src="images/fruit2.png" alt="">
-                        <h3>Orange</h3>
-                    </div>
-                    <div class="text-center">
-                        <img src="images/fruit3.png" alt="">
-                        <h3>Mango</h3>
-                    </div>
-                    <div class="text-center">
-                        <img src="images/fruit4.png" alt="">
-                        <h3>Strawberry</h3>
-                    </div>
-                    <div class="text-center">
-                        <img src="images/fruit5.png" alt="">
-                        <h3>pomegranate</h3>
+                        <div class="text-center">
+                            <img src="images/fruit2.png" alt="">
+                            <h3>Orange</h3>
+                        </div>
+                        <div class="text-center">
+                            <img src="images/fruit3.png" alt="">
+                            <h3>Mango</h3>
+                        </div>
+                        <div class="text-center">
+                            <img src="images/fruit4.png" alt="">
+                            <h3>Strawberry</h3>
+                        </div>
+                        <div class="text-center">
+                            <img src="images/fruit5.png" alt="">
+                            <h3>pomegranate</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,7 +234,7 @@
         <!-- Deal Of the Day Section -->
         <Section class="mt-24">
             <!-- Content Container -->
-            <div class="lg:flex md:flex items-center mb-10">
+            <div class="lg:flex md:flex flex-row items-center mb-10">
                 <!-- Content -->
                 <div class="flex-1 space-y-5">
                     <h3 class="text-5xl">Deal of the day</h3>
@@ -241,7 +244,7 @@
                 </div>
                 <!-- Timer / Countdown -->
                 <div class="flex-1">
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-end">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max lg:justify-end justify-center">
                         <div class="flex flex-col">
                             <span class="countdown font-mono text-5xl">
                                 <span style="--value:15;"></span>
